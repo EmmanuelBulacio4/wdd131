@@ -1,0 +1,80 @@
+/* import font family from google*/
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+*{
+    max-width: 960px;
+}
+
+/*Set variables*/
+:root{
+    --head-background-color: #001bebb1;
+    --accent1-color: #ffffff;
+
+    --heading-font: 'Madimi One', serif;
+    --paragraph-font: Verdana, serif;
+
+    --nav-background-color: rgb(53, 52, 52);
+    --nav-link-color: #bbbbdc;
+    --nav-hover-link-color: #97fff3c9;
+    --nav-hover-background-color: rgb(53, 52, 52);
+}
+/*Style the header*/
+header{
+    display: grid;
+    grid-row: 2fr 1fr;
+    background-color: var(--head-background-color);
+}
+
+h1{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+    background-color: var(--nav-background-color);
+}
+
+.links a{
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    color: var(--nav-hover-link-color);
+}
+
+/*Style the Main Tag*/
+main{
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-column-gap: 0.5rem;
+    padding: 10px;
+    max-width: 940px;
+    background-color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+    background-color: var(--head-background-color);
+    padding: 10px;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: ;
+}
+
+
+
+/*Style the Footer*/
+footer{
+    background-color: var(--head-background-color);
+    text-align: center;
+    padding: 10px;
+}
