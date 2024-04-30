@@ -1,0 +1,58 @@
+body{
+    max-width: 960px;
+}
+
+header{
+    max-width: 960px;
+    background-color: rgb(188, 176, 176);
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+header p{
+    padding-left: 15px;
+    padding: 2rem;
+}
+
+nav{
+    background-color: rgb(153, 135, 135);
+    display:flex;
+    margin: auto 0;
+    padding: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}9
+
+a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px;
+}
+
+#principal{
+    background-color: rgb(115, 93, 61);
+    padding-left: 10px;
+    padding-bottom: 1rem;
+}
+
+#aside{
+    background-color: rgb(133, 133, 190);
+    padding-left: 10px;
+    padding-bottom: 1rem;
+}
+
+footer{
+    background-color: rgb(80, 73, 73);
+    text-align: center;
+    padding: 2.5rem;
+}
