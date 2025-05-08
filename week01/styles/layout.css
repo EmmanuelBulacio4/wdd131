@@ -1,0 +1,24 @@
+body{
+    display: grid;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    display: grid;
+    background-color: rgb(68, 67, 67);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(68, 67, 67);
+}
+
+p{
+    color: white;
+}
