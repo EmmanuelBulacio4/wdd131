@@ -1,0 +1,18 @@
+/* import the font */
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Tagesschrift&display=swap');
+/* Variables */
+:root{
+    --main-color: blue;
+    --nav-color:grey;
+    --colored-text: yellow;
+}
+
+h1, h2, h3{
+    font-family: 'Skranji';
+    font-weight: 400;
+    /* font-weight: 700; */ /*Si quiero negrita*/
+}
+
+img{
+    max-width: 200px;
+}
