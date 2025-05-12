@@ -56,11 +56,40 @@ main{
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
     margin: 0 auto;
-    padding: 15px;
+    padding: 10px;
+    max-width: 97%;
 }
 
     /*subsectios */
 .card{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+h2{
+    background-color: var(--main-color);
+}
+
+h3{
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    padding: 10px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 20px;
+}
+
+
+
+/* .card{
     border: 2px solid grey;
     border-radius: 8px;
     padding: 15px;
@@ -83,13 +112,4 @@ h3{
 
 #salta p{
     flex: 2;
-}
-
-
-
-/* Footer */
-footer{
-    text-align: center;
-    background-color: var(--main-color);
-    padding: 20px;
-}
+} */
