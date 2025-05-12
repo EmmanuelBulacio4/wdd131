@@ -8,11 +8,13 @@
     --colored-text: yellow;
 }
 
-h1, h2, h3{
+h1, h2{
     font-family: 'Skranji';
     font-weight: 500;
     padding: 10px;
+    text-align: center;
 }
+
 
 body{
     margin: 0 auto;
@@ -49,6 +51,21 @@ a:hover{
 }
 
 /* Main Section */
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+    /*subsectios */
+.card{
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
 
 
 
