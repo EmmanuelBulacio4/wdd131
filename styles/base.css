@@ -74,6 +74,7 @@ h2{
 h3{
     border-bottom: 1px solid grey;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 #aboutme, #salta{
