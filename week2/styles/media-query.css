@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
 
 :root{
-    --main-color: rgba(84, 84, 212, 0.685);
-    --background-color: rgb(137, 197, 218);
+    --main-color: rgba(64, 64, 255, 0.685);
+    --background-color: rgb(131, 163, 252);
 }
 
 body{
