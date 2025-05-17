@@ -3,17 +3,22 @@ const input = document.querySelector('#favchap');
 const addButton = document.querySelector('button');
 const list = document.querySelector('#list');
 
-// Step 6 crear el elemento li
-const listItem = document.createElement('li');
+addButton.addEventListener('click', () => {
+    const myItem = input.value;
+    input.value = '';
 
-// Step 7 creo el boton borrar
-const delButton = document.createElement('button');
+    const listItem = document.createElement('li');
+    const listText = document.createElement('span');
+    const listBtn = document.createElement('button');
 
-// Step 8 tomo el valor de la entrada y lo asigno al elemento li
-listItem.textContent = input.value;
+    listItem.appendChild(listText);
+    listText.textContent = myItem;
+    listItem.appendChild(listBtn);
+    listBtn.textContent = '❌';
+    list.appendChild(listItem);
 
-// Step 9 doy imagen al boton borrar
-delButton.textContent = '❌';
-
-// Step 10
-list.append(listItem)
+    listBtn.addEventListener('click', () => {
+        list.removeChild(listItem);
+    })
+    input.focus();
+});
