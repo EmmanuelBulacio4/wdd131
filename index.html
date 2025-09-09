@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-Us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Bulacio</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Esteban Emmanuel Bulacio - Home Page">
+    <meta name="author" content="WDD 131 - Dynamic Web Fundamentals - Esteban Emmanuel Bulacio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="color">Emmanuel Bulacio</span></h1>
+        <nav class="navigation">
+            <a href="https://www.linkedin.com/in/emmanuel-bulacio/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="#" target="_blank">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <article id="aboutme">
+                <h2>About Me</h2>
+                <div>
+                    <p>My name is Emmanuel Bulacio and I am 34.
+                    I live in Salta Argentina with my wife and my little daughter.
+                    I am coursing my first certificate on BYU Idaho and I hope finish it
+                    this year! I serve in the Church as a Quorum President and I love serving others.
+                    I love videogames and travel with my family.
+                    </p>
+                    <img src="images/author.webp" alt="photo of the author">
+                </div>
+            </article>
+            <article id="salta">
+                <h3>Salta, Argentina</h3>
+                <div>
+                    <figure>
+                        <img src="images/argentina-flag.webp" alt="Argentinian Flag">
+                        <figcaption>Argentina</figcaption>
+                    </figure>
+                    <p>Argentina is a South American country known for its diverse landscapes, 
+                    from the Andes mountains to vast plains and glaciers. Its capital, Buenos Aires, 
+                    is famous for tango music and vibrant culture. Argentina has a strong European 
+                    influence, visible in its architecture, cuisine, and traditions. The country’s 
+                    economy relies on agriculture, livestock, and natural resources. Argentina is also 
+                    renowned for its passion for football and its rich literary heritage.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div id="links">
+                <ul>
+                    <li><a href="https://www.w3.org/">W3School</a></li>
+                    <li><a href="https://byui-cse.github.io/wdd131-ww-course/">WDD 131 Theory</a></li>
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a></li>
+                    <li><a href="https://www.blackbox.ai/">Blackbox IA</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Emmanuel Bulacio - Argentina</p>
+        <!-- <span class="color">Last Modification:</span><p id="lastModified" class="color"></p> -->
+        <p class="color">Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
