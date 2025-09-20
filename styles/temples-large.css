@@ -1,0 +1,46 @@
+@media screen and (min-width: 640px) {
+
+    header{
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #temples{
+        display: grid; /* Activa Grid Layout */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas */
+        grid-gap: 10px; /* Espaciado entre las imágenes */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        margin: 0 auto;
+    }
+
+    #temples img {
+        width: 100%; /* Asegura que las imágenes ocupen toda la celda */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Elimina espacio extra debajo de las imágenes */
+        object-fit: cover; /* Ajusta las imágenes si es necesario */
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1.5em;
+        display: block;
+    }
+}
