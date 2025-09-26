@@ -43,7 +43,7 @@ h2{
 }
 
 #hamburger.open::before { /*Mrco el comportamiento despues del evento */
-    content: "❌";
+    content: "❌";       /*Con la regla "content: ;" agrego el elemento nuevo */
 }
 
 #hamburger {
