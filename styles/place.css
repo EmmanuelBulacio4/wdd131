@@ -1,19 +1,42 @@
 :root{
     --argentinian-blue: #74ACDF;
     --argentinian-yellow: #F6B40E;
+    --main-font: "Handlee", cursive;
+}
+
+* {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    font-family: var(--main-font);
+    background-color: var(--argentinian-blue);
+}
+
+h2, h3{
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+.hero{
+    display: flex;
+}
+
+#icon{
+    display: block;
+    height: 50px;
+    width: auto;
 }
 
 
 
-
-
-
-
 footer{
-    width: 640px;
     text-align: center;
     font-family: "Handlee", cursive;
     background-color: var(--argentinian-blue);
-    width: 100%;
+    /* width: 100%; */
     padding: 1.5rem;
 }
