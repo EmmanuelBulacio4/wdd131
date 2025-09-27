@@ -4,39 +4,76 @@
     --main-font: "Handlee", cursive;
 }
 
-* {
-    max-width: 500px;
+.handlee-regular {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    max-width: 640px;
+    justify-content: center;
+    box-sizing: border-box;
     margin: 0 auto;
-    padding: 10px;
 }
 
-header {
-    text-align: center;
-    font-family: var(--main-font);
+header{
     background-color: var(--argentinian-blue);
+    width: auto;
+    padding: 1rem;
+    border-bottom: 1rem solid var(--argentinian-yellow);
+    max-width: 640px;
 }
 
-h2, h3{
+h1{
     font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 3rem;
     text-align: center;
 }
 
-.hero{
-    display: flex;
+#hero source{
+    display: block;
+    max-width: 640px;
+    height: auto;
+}
+
+#data, #weather{
+    display: block;
+    background-color: white;
+    width: 100%;
+    border: 2px solid var(--argentinian-yellow);
+}
+
+h2{
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* #data div, #weather div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+#data h3, #weather h3{
+    text-align: end;
+    padding: 1px;
+    margin: 0;
+}
+
+#weather{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #icon{
-    display: block;
-    height: 50px;
-    width: auto;
+    max-width: 30px;
 }
-
-
 
 footer{
     text-align: center;
-    font-family: "Handlee", cursive;
+    font-family: var(--main-font);
     background-color: var(--argentinian-blue);
-    /* width: 100%; */
     padding: 1.5rem;
 }
