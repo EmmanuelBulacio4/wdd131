@@ -1,27 +1,25 @@
 @media screen and (min-width: 900px) {
-    h1{
-        font-family: 'Times New Roman', Times, serif;
-    }
-
     body{
         height: 100vh;
     }
 
-    main{
-        position: relative;
-        display: grid;
-        grid-template-columns: 12.5% 20% 35% 20% 12.5%;
-        grid-template-rows: 12.5% 25% 30% 20% 12.5%;
+    #data, #weather{
+    background-color: rgb(243, 239, 235, 0.6);
+    width: 20%;
+    border: 2px solid var(--argentinian-yellow);
+    border-radius: 5px;
+    box-sizing: content-box;
+    position: absolute;
+}
+
+    #data{
+        top: 40%;
+        left: 10%;
     }
 
-    pictute{
-        background-size: cover;
+    #weather{
+        top: 55%;
+        right: 10%;
     }
-
-
-
-
-
-
 }
 

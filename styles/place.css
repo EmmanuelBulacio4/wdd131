@@ -53,8 +53,9 @@ picture img {
 
 /* Secciones */
 #data, #weather{
-    background-color: white;
-    width: 100%;
+    background-color: antiquewhite;
+    width: 70%;
+    margin: 0 auto;
     border: 2px solid var(--argentinian-yellow);
     border-radius: 10px;
     box-sizing: content-box;
@@ -63,11 +64,10 @@ picture img {
 h2{
     font-family: var(--main-font);
     text-align: center;
-    padding: 1rem;
+    margin: 0;
 }
 
 #data h3, #weather h3{
-    padding: 1px;
     margin: 0;
 }
 
@@ -75,11 +75,6 @@ table{
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
-}
-
-th{
-    text-align: end;
-    padding-right: 0.5rem;
 }
 
 #weather{
