@@ -11,7 +11,7 @@
 }
 
 body{
-    min-width: 500px;
+    /* min-width: 500px; */
     justify-content: center;
     box-sizing: border-box;
     margin: 0 auto;
@@ -37,7 +37,13 @@ h1{
     display: block;
     margin: 0 auto;
     text-align: center;
-    object-fit: cover;
+}
+
+picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #data, #weather{
