@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 //Año y Fecha en el Footer
 const today = new Date();
 const year = today.getFullYear();
