@@ -37,6 +37,7 @@ h1{
     display: block;
     margin: 0 auto;
     text-align: center;
+    object-fit: cover;
 }
 
 #data, #weather{
