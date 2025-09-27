@@ -1,0 +1,19 @@
+:root{
+    --argentinian-blue: #74ACDF;
+    --argentinian-yellow: #F6B40E;
+}
+
+
+
+
+
+
+
+footer{
+    width: 640px;
+    text-align: center;
+    font-family: "Handlee", cursive;
+    background-color: var(--argentinian-blue);
+    width: 100%;
+    padding: 1.5rem;
+}
