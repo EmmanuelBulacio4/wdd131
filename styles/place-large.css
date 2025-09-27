@@ -2,4 +2,14 @@
     h1{
         font-family: 'Times New Roman', Times, serif;
     }
+
+    .hero{
+        display: flex;
+    }
+
+    picture img{
+        height: auto;
+        width: 100%;
+    }
+
 }
