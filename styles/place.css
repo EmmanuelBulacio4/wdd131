@@ -43,6 +43,8 @@ h1{
     background-color: white;
     width: 100%;
     border: 2px solid var(--argentinian-yellow);
+    border-radius: 10px;
+    box-sizing: content-box;
 }
 
 h2{
@@ -57,9 +59,20 @@ h2{
 } */
 
 #data h3, #weather h3{
-    text-align: end;
+    /* text-align: end; */
     padding: 1px;
     margin: 0;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+th{
+    text-align: end;
+    padding-right: 0.5rem;
 }
 
 #weather{
