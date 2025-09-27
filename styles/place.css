@@ -11,6 +11,7 @@
 }
 
 body{
+    min-width: 500px;
     justify-content: center;
     box-sizing: border-box;
     margin: 0 auto;
@@ -32,10 +33,10 @@ h1{
     text-align: center;
 }
 
-.hero source{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.hero {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #data, #weather{
@@ -53,13 +54,7 @@ h2{
     padding: 1rem;
 }
 
-/* #data div, #weather div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
-
 #data h3, #weather h3{
-    /* text-align: end; */
     padding: 1px;
     margin: 0;
 }
