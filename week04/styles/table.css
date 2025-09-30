@@ -42,3 +42,7 @@ tbody tr:nth-last-child(even){
 tbody tr:nth-child(odd){
     background-color: white;
 }
+
+/* la pseudoclase :nth-child(even) 
+hace que las filas de las tablas pares tengan la propiedad que declare en la regla
+por otro lado si en lugar de "even" escribo "odd" seran las filas impares */
