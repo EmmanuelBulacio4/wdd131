@@ -1,0 +1,44 @@
+body{
+    padding: 1rem;
+}
+
+caption{
+    caption-side: bottom;
+    text-align: left;
+}
+
+/* Aspectos de la tabla en general*/
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Aspecto del table head y table data */
+th, td {
+    padding: 0.5em 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+thead th, tbody td{
+    text-align: center;
+}
+
+thead{
+    color: white;
+    background-color: black;
+    text-align: center;
+    column-span: all;
+}
+
+.column-title{
+    background-color: gray;
+}
+
+tbody tr:nth-last-child(even){
+    background-color: gray;
+}
+
+tbody tr:nth-child(odd){
+    background-color: white;
+}
