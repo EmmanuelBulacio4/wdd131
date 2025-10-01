@@ -1,0 +1,24 @@
+@media screen and (min-width: 900px) {
+    body{
+        height: 100vh;
+    }
+
+    #data, #weather{
+    background-color: rgb(243, 239, 235, 0.6);
+    width: 20%;
+    border: 2px solid var(--argentinian-yellow);
+    border-radius: 5px;
+    box-sizing: content-box;
+    position: absolute;
+}
+
+    #data{
+        top: 40%;
+        left: 10%;
+    }
+
+    #weather{
+        top: 55%;
+        right: 10%;
+    }
+}
