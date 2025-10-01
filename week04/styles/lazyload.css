@@ -1,0 +1,13 @@
+body{
+    padding: 1rem;
+}
+
+h1, footer{
+    text-align: center;
+}
+
+img{
+    display: block;
+    padding: 2rem;
+    margin: 0 auto;
+}
