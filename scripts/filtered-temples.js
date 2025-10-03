@@ -111,6 +111,14 @@ const oldTemples = querySelector("#old");
 const largeTemples = querySelector("large");
 const smallTemples = querySelector("#small");
 
+smallTemples.addEventListener("click" , ()=> 
+    createTempleCard(temples.filter(temple => temple.area < 10000))
+);
+
+largeTemples.addEventListener("click" , () =>
+    createTempleCard(temples.filter(temple => temple.area > 90000))
+)
+
 
 
 function createTempleCard(filteredTemples){
