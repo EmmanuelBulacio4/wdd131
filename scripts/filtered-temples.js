@@ -104,26 +104,25 @@ const temples = [
 
 
 
-createTempleCard(temples);
+// createTempleCard(temples);
 
-const newTemples = querySelector("#new");
-const oldTemples = querySelector("#old");
-const largeTemples = querySelector("large");
-const smallTemples = querySelector("#small");
+const newTemples = document.querySelector("#new");
+const oldTemples = document.querySelector("#old");
+const largeTemples = document.querySelector("#large");
+const smallTemples = document.querySelector("#small");
 
-smallTemples.addEventListener("click" , ()=> 
+smallTemples.addEventListener("click", () => 
     createTempleCard(temples.filter(temple => temple.area < 10000))
 );
 
-largeTemples.addEventListener("click" , () =>
+largeTemples.addEventListener("click", () =>
     createTempleCard(temples.filter(temple => temple.area > 90000))
-)
-
+);
 
 
 function createTempleCard(filteredTemples){
     filteredTemples.forEach(temple => {
-        document.querySelector("#temples-grid").innerHTML = "";
+
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -131,10 +130,10 @@ function createTempleCard(filteredTemples){
         let area = document.createElement("p");
         let img = document.createElement("img");
 
-        name.textContent(temple.templeName);
+        name.textContent = (temple.templeName);
         location.innerHTML = `<span class = "label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class = "label">Location:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class = "label">Location:</span> ${temple.area}`;
+        dedication.innerHTML = `<span class = "label">Dedication:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class = "label">Area:</span> ${temple.area} square feet`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
         img.setAttribute("loading", "lazy");
@@ -145,7 +144,7 @@ function createTempleCard(filteredTemples){
         card.appendChild(area);
         card.appendChild(img);
         
-        documento.getElementById("temples-grid").appendChild(card);
+        document.getElementById("temples-grid").appendChild(card);
     }
     );
 }
