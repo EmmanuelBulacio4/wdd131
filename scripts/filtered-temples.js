@@ -104,10 +104,18 @@ const temples = [
 
 
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard(){
-    temples.forEach(temple => {
+const newTemples = querySelector("#new");
+const oldTemples = querySelector("#old");
+const largeTemples = querySelector("large");
+const smallTemples = querySelector("#small");
+
+
+
+function createTempleCard(filteredTemples){
+    filteredTemples.forEach(temple => {
+        document.querySelector("#temples-grid").innerHTML = "";
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
