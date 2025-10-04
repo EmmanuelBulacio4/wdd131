@@ -44,6 +44,7 @@ div section{
     border-radius: 5px;
     margin: 0 auto;
     padding: 10px;
+    background-color: var(--background-color-2);
 }
 
 #hamburger::before {   /*Marco el comportamiento antes del evento */

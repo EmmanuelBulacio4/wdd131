@@ -104,6 +104,7 @@ const temples = [
 
 createTempleCard(temples);    //Esta linea hace que cuando se entre a la pagina aparezcan todos los templos.
 
+const subTitle = document.querySelector("h2");
 
 const home = document.querySelector("#home");
 const old = document.querySelector("#old");
@@ -112,17 +113,21 @@ const smallTemples = document.querySelector("#small");
 const largeTemples = document.querySelector("#large");
 
 home.addEventListener("click", () => {
+    subTitle.textContent = "Home";
     createTempleCard(temples);
 });
 
 old.addEventListener("click", () => {
+    subTitle.textContent = "Old Temples";
     const oldTemples = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(",")[0]);
         return year < 1900;
     });
-    createTempleCard(oldTemples);});
+    createTempleCard(oldTemples);
+});
 
 newOne.addEventListener("click", () => {
+    subTitle.textContent = "New Temples";
     const oldTemples = temples.filter(temple => {
         const year = parseInt(temple.dedicated.split(",")[0]);
         return year > 2000;
@@ -130,18 +135,16 @@ newOne.addEventListener("click", () => {
     createTempleCard(oldTemples);});
 
 largeTemples.addEventListener("click", () => {
+    subTitle.textContent = "Large Temples";
     const large = temples.filter(temple => temple.area>90000);
     createTempleCard(large);
 });
 
 smallTemples.addEventListener("click", () => {
+    subTitle.textContent = "Small Temples";
     const Small = temples.filter(temple => temple.area<10000);
     createTempleCard(Small);
 });
-
-
-
-
 
 function createTempleCard(filteredTemples){
     document.querySelector("#temples-grid").innerHTML = "";
