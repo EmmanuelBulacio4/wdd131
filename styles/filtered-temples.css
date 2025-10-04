@@ -1,58 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 :root {
     --background-color-1: white;
-    --background-color-2:  lightblue;
+    --background-color-2: lightblue;
     --color1: black;
-    --color2: white;
+    --color2: rgb(78, 4, 4);
+    --main-font: "Style Script";
 }
-body{
+
+.style-script-regular {
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
     background-color: var(--background-color-1);
     margin: 20px;
 }
 
-header{
+header {
     border-bottom: 2px solid white;
     background-color: var(--background-color-2);
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 0.5rem;
-    font-family: "Parkisans";
+    font-family: var(--main-font);
     color: var(--color1);
+    font-size: 2.5rem;
+    font-weight: 200;
 }
 
-a{
+a {
     color: var(--color2);
 }
 
-h2{
+h2 {
     text-align: center;
-    font-family: sans-serif;
     color: var(--color1);
-    font-family: "Parkisans";
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 150;
 }
 
-#temples-grid{
+section{
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+
+#temples-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
 
-div section{
-    border: 1px solid black;
-    border-radius: 5px;
+div section {
+    border: 1px solid rgb(42, 41, 41);
+    border-radius: 10px;
     margin: 0 auto;
     padding: 10px;
     background-color: var(--background-color-2);
 }
 
-#hamburger::before {   /*Marco el comportamiento antes del evento */
+#hamburger::before {
+    /*Marco el comportamiento antes del evento */
     content: "☰";
 }
 
-#hamburger.open::before { /*Mrco el comportamiento despues del evento */
-    content: "❌";       /*Con la regla "content: ;" agrego el elemento nuevo */
+#hamburger.open::before {
+    /*Mrco el comportamiento despues del evento */
+    content: "❌";
+    /*Con la regla "content: ;" agrego el elemento nuevo */
 }
 
 #hamburger {
@@ -65,23 +86,24 @@ div section{
     right: 1.5rem;
 }
 
-ul{
+ul {
     display: flex;
     justify-content: space-around;
 }
-main{
+
+main {
     padding-top: 1rem;
 }
 
-img{
+img {
     max-width: 250px;
 }
 
-figure{
+figure {
     margin: 0 auto;
 }
 
-figcaption{
+figcaption {
     color: var(--color1);
     text-align: left;
     padding-bottom: 20px;
@@ -89,13 +111,15 @@ figcaption{
     font-weight: 300;
 }
 
-a{
+a {
     text-decoration: none;
+    font-family: var(--main-font);
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
+
 .navigation ul {
     display: none;
     margin: 0;
@@ -120,13 +144,13 @@ a:hover{
 }
 
 
-footer{
+footer {
     background-color: var(--background-color-2);
     text-align: center;
     border-top: 2px solid white;
 }
 
-footer p{
+footer p {
     font-family: "Parkisans";
     color: var(--color1);
 }
