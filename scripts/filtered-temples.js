@@ -102,27 +102,51 @@ const temples = [
 
 ];
 
+createTempleCard(temples);    //Esta linea hace que cuando se entre a la pagina aparezcan todos los templos.
 
 
-// createTempleCard(temples);
-
-const newTemples = document.querySelector("#new");
-const oldTemples = document.querySelector("#old");
-const largeTemples = document.querySelector("#large");
+const home = document.querySelector("#home");
+const old = document.querySelector("#old");
+const newOne = document.querySelector("#new");
 const smallTemples = document.querySelector("#small");
+const largeTemples = document.querySelector("#large");
 
-smallTemples.addEventListener("click", () => 
-    createTempleCard(temples.filter(temple => temple.area < 10000))
-);
+home.addEventListener("click", () => {
+    createTempleCard(temples);
+});
 
-largeTemples.addEventListener("click", () =>
-    createTempleCard(temples.filter(temple => temple.area > 90000))
-);
+old.addEventListener("click", () => {
+    const oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year < 1900;
+    });
+    createTempleCard(oldTemples);});
+
+newOne.addEventListener("click", () => {
+    const oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year > 2000;
+    });
+    createTempleCard(oldTemples);});
+
+largeTemples.addEventListener("click", () => {
+    const large = temples.filter(temple => temple.area>90000);
+    createTempleCard(large);
+});
+
+smallTemples.addEventListener("click", () => {
+    const Small = temples.filter(temple => temple.area<10000);
+    createTempleCard(Small);
+});
+
+
+
 
 
 function createTempleCard(filteredTemples){
+    document.querySelector("#temples-grid").innerHTML = "";
+    
     filteredTemples.forEach(temple => {
-
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -144,7 +168,7 @@ function createTempleCard(filteredTemples){
         card.appendChild(area);
         card.appendChild(img);
         
-        document.getElementById("temples-grid").appendChild(card);
+        document.querySelector("#temples-grid").appendChild(card);
     }
     );
 }

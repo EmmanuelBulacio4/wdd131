@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,31 @@
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Temples Album</h1>
         <nav class="navigation">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li id="old"><a href="">Old</a></li>
-                <li id="new"><a href="">New</a></li>
-                <li id="large"><a href="">Large</a></li>
-                <li id="small"><a href="">Small</a></li>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
         <button title="Menu button" id="hamburger"></button>
     </header>
     <main>
         <h2></h2>
-        <div id="temples-grid"></div>
+        <div id="temples-grid">
+
+        </div>
     </main>
     <footer>
         <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
