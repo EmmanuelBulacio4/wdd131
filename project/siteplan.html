@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Site</title>
-    <meta>
-    <meta>
+    <meta name="description" content="A web Page for parents. They can access to chronogram o classes and see assignments.">
+    <meta name="author" content="WDD131 | Emmanuel Bulacio">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/siteplan.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/hat-icon.svg" alt="a graduation hat icon" width="50">
         <h1>School Classroom Site</h1>
+        <button title="Menu button" id="hamburger"></button>
     </header>
     <section class="site-sec"></section>
     <main class="viewer">
@@ -23,6 +27,8 @@
             <figcaption>mobile view</figcaption>
         </figure>
     </main>
+    <div id="chrono">
+    </div>
     <footer>
         <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
         <p>Last Modification: <span id="lastModified"></span></p>
