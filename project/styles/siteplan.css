@@ -1,0 +1,47 @@
+:root {
+    --main-background-color: #4e64e4;
+    --second-background-color: #d7bf31;
+    --main-font-color: black;
+    --second-font-color: white;
+    --main-font-family: "Open Sans", sans-serif;
+}
+
+body {
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: var(--second-background-color);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-background-color);
+    color: var(--second-font-color);
+    font-family: var(--main-font-family);
+}
+
+#hamburger::before {   /*Marco el comportamiento antes del evento */
+    content: "☰";
+}
+
+#hamburger.open::before { /*Marco el comportamiento despues del evento */
+    content: "X";       /*Con la regla "content: ;" agrego el elemento nuevo */
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+}
+
+
+footer{
+    background-color: var(--main-background-color);
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
