@@ -22,28 +22,30 @@
         </label>
     </fieldset>
     <fieldset>
-        <label>Overall Rating
-        <div class="star-rating">
-            <input type="radio" name="stars" id="star-a" value="5" />
-            <label for="star-a"></label>
-
-            <input type="radio" name="stars" id="star-b" value="4" />
-            <label for="star-b"></label>
-
-            <input type="radio" name="stars" id="star-c" value="3" />
-            <label for="star-c"></label>
-
-            <input type="radio" name="stars" id="star-d" value="2" />
-            <label for="star-d"></label>
-
-            <input type="radio" name="stars" id="star-e" value="1" />
-            <label for="star-e"></label>
-        </div>
-        </label>
+        <legend>Overall Rating</legend>
+        <label>⭐<input type="radio" name="punctuation" value="one"></label>
+        <label>⭐⭐<input type="radio" name="punctuation" value="two"></label>
+        <label>⭐⭐⭐<input type="radio" name="punctuation" value="three"></label>
+        <label>⭐⭐⭐⭐<input type="radio" name="punctuation" value="four"></label>
+        <label>⭐⭐⭐⭐⭐<input type="radio" name="punctuation" value="five"></label>
     </fieldset>
     <fieldset>
         <label>Date of Installation <input type="date" required></label>
     </fieldset>
+    <fieldset>
+        <legend>Which features did you find useful in the product?<br>
+            <span>(Select all that apply)</span>
+        </legend>
+        <label><input type="checkbox" name="durability" value="yes">Durability</label>
+        <label><input type="checkbox" name="easyuse" value="yes">Easy of Use</label>
+        <label><input type="checkbox" name="performance" value="yes">Performance</label>
+        <label><input type="checkbox" name="design" value="yes">Design</label>
+    </fieldset>
+    <fieldset>
+        <label>Written Review (Optional)<textarea name="" id=""></textarea> </label>
+        <label>Your Name(Optional)<input type="text"></label>
+    </fieldset>
+    <input type="submit" value="Give my opinion">
 </body>
 
 </html>
