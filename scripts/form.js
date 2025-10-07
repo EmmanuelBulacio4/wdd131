@@ -1,3 +1,11 @@
+//-------------Date------------------------
+const today = new Date();
+const year = today.getFullYear();
+document.querySelector("#currentyear").textContent = year;
+let lastModification = new Date(document.lastModified)
+document.getElementById("lastModified").textContent = lastModification.toLocaleDateString("en-US");
+
+//----------Form; List of preducts------------
 const products = [
     {
         id: "fc-1888",
@@ -26,18 +34,30 @@ const products = [
     }
 ];
 
+// ---------Add the options to the <select>------------
+// Selecciono del documento el elemenmto select y lo guardo en una variable
 const productsList = document.querySelector("select");
 
-const instruction = document.createElement("option");
+// Creo la instruccion para el usuario. el "Choose a product..."
+const instruction = document.createElement("option"); 
 instruction.textContent = "Choose a product...";
-instruction.selected = true;
-instruction.disabled = true;
-productsList.appendChild(instruction);
+instruction.selected = true;                                //con esta linea aparece seleccionada la opcion
+instruction.disabled = true;                               //con esta linea hago que no pueda seleccionarse por el usuario.
+productsList.appendChild(instruction);                     //agrego la <option> a la variable donde esta guardada section
 
 
-products.forEach(product => {
-    const item = document.createElement("option");
-    item.value = product.id;
-    item.textContent = product.name;
+products.forEach(product => {                              //Con el bucle recorro cada producto de la lista
+    const item = document.createElement("option");         //Creo la <opcion> que contendrá el producto
+    item.value = product.id;                               //El value creo que sirve para el backend- Pero aqui lo agrego porque asi debe ser
+    item.textContent = product.name; 
     productsList.appendChild(item);
-})
+});
+
+
+//----------------localStorage------------------
+
+
+
+localStorage.setItem();
+
+
