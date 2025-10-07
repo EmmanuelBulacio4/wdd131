@@ -1,12 +1,101 @@
-body{
-    width: 500px;
-    max-width: 640px;
+:root{
+    --font: Alan Sans;
 }
 
-fieldset{
-    border: 0px;
-    padding-bottom: 10px;
+.asteric{
+    color: red;
 }
+
+.parenthesis{
+    font-style: italic;
+}
+
+h1{
+    font-family: var(--font);
+    text-align: center;
+    background-color: rgb(110, 135, 243);
+    padding: 1rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.wf1{
+    background-color: rgb(149, 204, 252);
+    max-width: 500px;
+    border-radius: 6px;
+}
+
+.wf1 fieldset{
+    border: none;
+    margin: 1rem 0;
+    /* max-width: 500px; */
+    padding: 0.5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 0.5rem;
+    font-family: var(--font);
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 input[type="date"]
+{
+    display: block;
+    padding: 0.75rem;
+    width: 70%;
+    border-radius: 6px;
+    background-color: rgb(242, 228, 228);
+}
+
+.wf1 textarea{
+    display: block;
+    padding: 1.75rem;
+    width: 60%;
+    background-color: rgb(242, 228, 228);
+}
+
+
+.wf1 input[type="submit"]{
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 350px;
+    margin: 0rem 5% 2rem 5%;
+    background-color: rgb(110, 135, 243);
+    color: white;
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 
 open-sans-uniquifier {
@@ -14,4 +103,4 @@ open-sans-uniquifier {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-};
+} */

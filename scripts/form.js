@@ -25,7 +25,3 @@ const products = [
         averagerating: 5.0
     }
 ];
-
-products.forEach(product => {
-    product.
-});

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,55 @@
     <meta name="author" content="Emmanuel Bulacio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Open+Sans:wdth,wght@75..100,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Open+Sans:wdth,wght@75..100,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <h1>Product Review</h1>
-    <form method="get" action="review.html" class="wf1"></form>
-    <fieldset>
-        <label>Product Name*
-            <select id="products" name="product" required>
-                <option value="" disabled>Select a product</option>
-            </select>
-        </label>
-    </fieldset>
-    <fieldset>
-        <legend>Overall Rating</legend>
-        <label>⭐<input type="radio" name="punctuation" value="one"></label>
-        <label>⭐⭐<input type="radio" name="punctuation" value="two"></label>
-        <label>⭐⭐⭐<input type="radio" name="punctuation" value="three"></label>
-        <label>⭐⭐⭐⭐<input type="radio" name="punctuation" value="four"></label>
-        <label>⭐⭐⭐⭐⭐<input type="radio" name="punctuation" value="five"></label>
-    </fieldset>
-    <fieldset>
-        <label>Date of Installation <input type="date" required></label>
-    </fieldset>
-    <fieldset>
-        <legend>Which features did you find useful in the product?<br>
-            <span>(Select all that apply)</span>
-        </legend>
-        <label><input type="checkbox" name="durability" value="yes">Durability</label>
-        <label><input type="checkbox" name="easyuse" value="yes">Easy of Use</label>
-        <label><input type="checkbox" name="performance" value="yes">Performance</label>
-        <label><input type="checkbox" name="design" value="yes">Design</label>
-    </fieldset>
-    <fieldset>
-        <label>Written Review (Optional)<textarea name="wreview" id="written"></textarea> </label>
-        <label>Your Name(Optional)<input type="text"></label>
-    </fieldset>
-    <input type="submit" value="Give my opinion">
+    
+    <form method="get" action="review.html" class="wf1">
+        <h1>Product Review</h1>
+        <fieldset>
+            <label>Product Name <span class="asteric">*</span>
+                <select id="products" name="product" required>
+                    <option value="" disabled>Select a product</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <label><input type="radio" name="punctuation" value="five">⭐⭐⭐⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="four">⭐⭐⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="three">⭐⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="two">⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="one">⭐</label>
+        </fieldset>
+        <fieldset>
+            <label>Date of Installation <span class="asteric">*</span><input type="date" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Which features did you find useful in the product?<br>
+                <span class="parenthesis">(Select all that apply)</span>
+            </legend>
+            <label><input type="checkbox" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="easyuse" value="yes">Easy of Use</label>
+            <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" name="design" value="yes">Design</label>
+        </fieldset>
+        <fieldset>
+            <label>Written Review (Optional)
+                <textarea name="wreview" id="written"></textarea>
+            </label>
+            <label>Your Name(Optional)<input type="text" placeholder="Your Name"></label>
+        </fieldset>
+        <input type="submit" value="Give my opinion">
+    </form>
+    <footer>
+        <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
