@@ -1,0 +1,108 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {border-bottom: solid 1px #333;}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*-----------FORM STYLING---------*/
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+    
+}
+
+.wf1 legend{
+    color: blue;
+    padding: 0 0.5rem;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.wf1 div{
+    padding-top: 1rem;
+    color: blue;
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+
+{
+    background-color:grey;
+    display: block;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
