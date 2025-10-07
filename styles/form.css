@@ -1,0 +1,17 @@
+body{
+    width: 500px;
+    max-width: 640px;
+}
+
+fieldset{
+    border: 0px;
+    padding-bottom: 10px;
+}
+
+
+open-sans-uniquifier {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+};
