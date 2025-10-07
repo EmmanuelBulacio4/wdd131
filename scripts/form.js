@@ -25,3 +25,19 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+const productsList = document.querySelector("select");
+
+const instruction = document.createElement("option");
+instruction.textContent = "Choose a product...";
+instruction.selected = true;
+instruction.disabled = true;
+productsList.appendChild(instruction);
+
+
+products.forEach(product => {
+    const item = document.createElement("option");
+    item.value = product.id;
+    item.textContent = product.name;
+    productsList.appendChild(item);
+})
