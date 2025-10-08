@@ -55,9 +55,4 @@ products.forEach(product => {                              //Con el bucle recorr
 
 
 //----------------localStorage------------------
-
-
-
-localStorage.setItem();
-
-
+//In other jsfile.

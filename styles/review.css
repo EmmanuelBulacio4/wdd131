@@ -1,0 +1,13 @@
+h1{
+    font-family: var(--font);
+    text-align: center;
+    background-color: rgb(110, 135, 243);
+    padding: 1rem;
+    border-radius: 6px 6px 0 0;
+}
+
+p{
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1.5rem;
+}
