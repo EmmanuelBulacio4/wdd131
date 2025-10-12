@@ -39,11 +39,11 @@ const products = [
 const productsList = document.querySelector("select");
 
 // Creo la instruccion para el usuario. el "Choose a product..."
-const instruction = document.createElement("option"); 
-instruction.textContent = "Choose a product...";
-instruction.selected = true;                                //con esta linea aparece seleccionada la opcion
-instruction.disabled = true;                               //con esta linea hago que no pueda seleccionarse por el usuario.
-productsList.appendChild(instruction);                     //agrego la <option> a la variable donde esta guardada section
+// const instruction = document.createElement("option"); 
+// instruction.textContent = "Choose a product...";
+// instruction.selected = true;                                //con esta linea aparece seleccionada la opcion
+// instruction.disabled = true;                               //con esta linea hago que no pueda seleccionarse por el usuario.
+// productsList.appendChild(instruction);                     //agrego la <option> a la variable donde esta guardada section
 
 
 products.forEach(product => {                              //Con el bucle recorro cada producto de la lista
