@@ -11,7 +11,7 @@
 }
 
 .lists {
-    background-color: var(--main-background-color);
+    background-color: var(--main-color);
     border: 2px solid rgb(239, 234, 234);
     border-radius: 10px;
     padding: 1rem;

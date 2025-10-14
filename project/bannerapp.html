@@ -28,6 +28,25 @@
         <p>Paste a phrase, a paragraph and get the number of every letter you need to make your banner.
             Don´t waste your time using paper and counting every letter you need.
         </p>
+
+        <form method="get" action="review.html" class="wf1">
+        <h2>Rate the app</h2>
+        <fieldset>
+            <legend>Overall Rating <span class="asteric">*</span></legend>
+            <label><input type="radio" name="punctuation" value="five" required>⭐⭐⭐⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="four">⭐⭐⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="three">⭐⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="two">⭐⭐</label>
+            <label><input type="radio" name="punctuation" value="one">⭐</label>
+        </fieldset>
+        <fieldset>
+            <label>Written Review (Optional)
+                <textarea name="wreview" id="written"></textarea>
+            </label>
+            <label>Your Name(Optional)<input type="text" placeholder="Your Name"></label>
+        </fieldset>
+        <input type="submit" value="Give my opinion">
+    </form>
     </main>
     <footer>
         <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
