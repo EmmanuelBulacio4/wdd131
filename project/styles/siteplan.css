@@ -99,7 +99,7 @@ footer{
     width: 90%;
     max-width: 350px;
     margin: 0rem 5% 2rem 5%;
-    background-color: rgb(110, 135, 243);
+    background-color: var(--main-color);
     color: white;
     font-family: var(--font);
     font-weight: 500;
