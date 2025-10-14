@@ -778,6 +778,6 @@ const stuTable = [
 
 
 
-//Lineas para renderizar las tablas
-// const tableToShow = document.querySelector("#chrono");
-// tableToShow.innerHTML = stuTable[0].fourthStu;
+// Lineas para renderizar las tablas
+const tableToShow = document.querySelector("#chrono");
+tableToShow.innerHTML = stuTable[0].fourthStu;
