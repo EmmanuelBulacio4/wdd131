@@ -11,46 +11,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
-    <!-- <script src="scripts/siteplan.js" defer></script> -->
 </head>
 
 <body>
     <header>
         <img id="icon" src="images/hat-icon.svg" alt="a graduation hat icon" width="50">
         <h1>School Classroom Site</h1>
-        <button title="Menu button" id="hamburger"></button>
     </header>
     <main>
-        <h1>Banner App</h1>
-        <h2>Working on it</h2>
-        <p>Paste a phrase, a paragraph and get the number of every letter you need to make your banner.
-            Don´t waste your time using paper and counting every letter you need.
-        </p>
-
-        <form method="get" action="opinion.html" class="wf1">
-        <h2>Rate the app</h2>
-        <fieldset>
-            <legend>Overall Rating <span class="asteric">*</span></legend>
-            <label><input type="radio" name="punctuation" value="five" required>⭐⭐⭐⭐⭐</label>
-            <label><input type="radio" name="punctuation" value="four">⭐⭐⭐⭐</label>
-            <label><input type="radio" name="punctuation" value="three">⭐⭐⭐</label>
-            <label><input type="radio" name="punctuation" value="two">⭐⭐</label>
-            <label><input type="radio" name="punctuation" value="one">⭐</label>
-        </fieldset>
-        <fieldset>
-            <label>Written Review (Optional)
-                <textarea name="wreview" id="written"></textarea>
-            </label>
-            <label>Your Name(Optional)<input type="text" placeholder="Your Name"></label>
-        </fieldset>
-        <input type="submit" value="Give my opinion">
-    </form>
+        <div class="application">
+            <h2>Banner App</h2>
+            <label for="favchap">Write/Paste the phrase: </label>
+            <textarea name="" id="userInput"></textarea>
+            <button type="submit">Count Letters</button>
+            <ul id="list"></ul>
+        </div>
+        <div>
+            <form method="get" action="opinion.html" class="wf1">
+                <h2>Rate the app</h2>
+                <fieldset>
+                    <legend>Overall Rating <span class="asteric">*</span></legend>
+                    <label><input type="radio" name="punctuation" value="five" required>⭐⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="four">⭐⭐⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="three">⭐⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="two">⭐⭐</label>
+                    <label><input type="radio" name="punctuation" value="one">⭐</label>
+                </fieldset>
+                <fieldset>
+                    <label>Written Review (Optional)
+                        <textarea name="wreview" id="written"></textarea>
+                    </label>
+                    <label>Your Name(Optional)<input type="text" placeholder="Your Name"></label>
+                </fieldset>
+                <input type="submit" value="Give my opinion">
+            </form>
+        </div>
     </main>
     <footer>
         <p>&<span id="currentyear"></span> Emmanuel Bulacio - Salta, Argentina</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>

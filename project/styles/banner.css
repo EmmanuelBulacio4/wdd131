@@ -1,0 +1,97 @@
+:root {
+    --main-color: #4A90E2;
+    --main-background-color: #FFFFFF;
+    --second-background-color: #f4f6f8;
+    --main-font-color: black;
+    --second-font-color: white;
+    --main-font-family: "Open Sans", sans-serif;
+}
+
+body {
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+}
+
+main{
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--main-font-family);
+}
+
+/* Banner App */
+h1{
+    background-color: var(--main-color);
+    padding: 1rem;
+    color: var(--second-font-color);
+    text-align: center;
+}
+
+.msg{
+    font-family: var(--main-font-family);
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* --------Form-------- */
+.wf1 {
+    background-color: rgb(149, 204, 252);
+    max-width: 500px;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.wf1 fieldset {
+    border: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 0.5rem;
+    font-family: var(--main-font-family);
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 input[type="date"] {
+    display: block;
+    padding: 0.75rem;
+    width: 70%;
+    border-radius: 6px;
+    background-color: rgb(242, 228, 228);
+}
+
+.wf1 textarea {
+    display: block;
+    padding: 1.75rem;
+    width: 60%;
+    background-color: rgb(242, 228, 228);
+}
+
+
+.wf1 input[type="submit"] {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 350px;
+    margin: 0rem 5% 2rem 5%;
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--main-font-family);
+    font-weight: 500;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
