@@ -55,7 +55,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
-.lists ul, .lists h3 {
+.lists ul, .lists h3, .hero {
     display: none;
     margin: 0;
     list-style-type: none;
