@@ -55,12 +55,13 @@ a{
 a:hover{
     text-decoration: underline;
 }
-.lists ul, .lists h3, .hero {
+
+.hero{
     display: none;
-    margin: 0;
-    list-style-type: none;
-    background-color: var(--background-color2);
-    border: 2px solid var(--background-color1);
+}
+
+.lists ul, .lists h3 {
+    display: none;
 }
 
 .lists li, .lists h3 {
@@ -78,9 +79,43 @@ a:hover{
     padding: 15px;
 }
 
+.chrono{
+    border: 1px solid grey;
+    padding-bottom: 1rem;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    padding-bottom: 1rem;
+}
+
+thead th{
+    border: 1px solid black;
+    background-color: var(--main-color);
+    color: var(--second-font-color);
+    padding: 1rem;
+}
+
+th, td{
+    padding: 0.5rem;
+    border: 1px solid;
+    text-align: center;
+}
+
+tbody tr:nth-last-child(even){
+    background-color: var(--second-background-color);
+}
+
+tbody tr:nth-child(odd){
+    font-weight: bold;
+}
+
 footer {
     background-color: var(--main-color);
     padding: 2rem;
     text-align: center;
     font-family: var(--main-font-family);
+    font-weight: bold;
+    margin-top: 1rem;
 }

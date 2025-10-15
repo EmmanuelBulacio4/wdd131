@@ -18,7 +18,9 @@ burgerButton.addEventListener('click', () => {
 
 const teacherTable = [
     {
-        fourth: `<table>
+        fourth: `
+        <h2>Class 4th - Teacher</h2>
+        <table>
             <thead>
                 <tr>
                     <th></th>
@@ -219,7 +221,9 @@ const teacherTable = [
         </table>`
     },
     {
-        fifth: `<table>
+        fifth: `
+        <h2>Class 5th - Student
+        <table>
             <thead>
                 <tr>
                     <th>Trimestre</th>
@@ -430,7 +434,9 @@ const teacherTable = [
 
 const stuTable = [
     {
-        fourthStu: `<table>
+        fourthStu: `
+        <h2>Class 4th - Student</h2>
+        <table>
     <thead>
         <tr>
             <th></th>
@@ -600,7 +606,9 @@ const stuTable = [
             </table>`
     },
     {
-        fifthStu: `<table>
+        fifthStu: `
+        <h2>Class 5th - Student
+        <table>
     <thead>
         <tr>
             <th>Trimestre</th>

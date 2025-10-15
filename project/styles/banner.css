@@ -15,6 +15,7 @@ body {
 
 main{
     display: block;
+    
 }
 
 h1,
@@ -92,6 +93,7 @@ h1{
 footer {
     background-color: var(--main-color);
     padding: 2rem;
+    margin-top: 1rem;
     text-align: center;
     font-family: var(--main-font-family);
 }
