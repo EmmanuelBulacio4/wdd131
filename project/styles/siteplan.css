@@ -47,6 +47,36 @@ header {
     right: 1.5rem;
 }
 
+/* Menu in hamburguer button */
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.lists ul, .lists h3 {
+    display: none;
+    margin: 0;
+    list-style-type: none;
+    background-color: var(--background-color2);
+    border: 2px solid var(--background-color1);
+}
+
+.lists li, .lists h3 {
+    text-align: center;
+    display: block;
+    color: var(--color2);
+    margin: 1rem auto 0 auto;
+    font-family: "Parkisans";
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lists.open ul {
+    display: block;
+    padding: 15px;
+}
 
 footer {
     background-color: var(--main-color);
