@@ -14,8 +14,38 @@ body {
 }
 
 main{
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     
+}
+
+.application{
+    grid-column: 1/2;
+    justify-items: center;
+}
+
+.application label{
+    display: block;
+    text-align: left;
+}
+
+.application textarea{
+    display: block;
+    margin-bottom: 1rem;
+    padding: 3rem;
+}
+
+.application button{
+    display: block;
+    padding: 1rem;
+    font-family: var(--main-font-family);
+    background-color: var(--main-color);
+    color: var(--main-background-color);
+    font-weight: bold;
+}
+
+ul{
+    background-color: var(--second-background-color);
 }
 
 h1,
@@ -40,7 +70,7 @@ h1{
 /* --------Form-------- */
 .wf1 {
     background-color: rgb(149, 204, 252);
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 6px;
     margin: 0 auto;
     padding: 1rem;
@@ -54,14 +84,12 @@ h1{
 
 .wf1 label {
     display: block;
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem; */
     font-family: var(--main-font-family);
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
 }
 
-.wf1 input[type="text"],
-.wf1 select,
-.wf1 input[type="date"] {
+.wf1 input[type="text"] {
     display: block;
     padding: 0.75rem;
     width: 70%;

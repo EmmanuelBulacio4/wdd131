@@ -785,7 +785,34 @@ const stuTable = [
     }];
 
 
+//Algoritmo BannerApp
+const phrase = document.getElementById("#userInput");
+const runApp = document.querySelector(".appButton");
 
+runApp.addEventListener("click", () => {
+    const entryText = phrase.value;
+    if (entryText.value.trim() !== ""){
+        let listItem = querySelector("ul");
+        const array = cleanArray(entryText);
+    }
+}
+)
+
+
+function cleanArray(inputArray){
+    let noSpace = inputArray.replace(" ","");
+    let splitArray = noSpace.split("");
+    let noSpecial = splitArray.replace();
+    
+}
+
+
+
+
+
+
+
+    
 // Lineas para renderizar las tablas
 const tableToShow = document.querySelector("#chrono");
 tableToShow.innerHTML = stuTable[0].fourthStu;
