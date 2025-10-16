@@ -27,6 +27,10 @@ main{
     
 }
 
+picture{
+    margin: 0 auto;
+}
+
 .application{
     grid-column: 1/2;
     justify-items: center;
@@ -54,6 +58,8 @@ main{
 
 ul{
     background-color: var(--second-background-color);
+    columns: 3;
+    column-width: auto;
 }
 
 h1,
