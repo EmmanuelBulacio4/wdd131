@@ -791,7 +791,7 @@ const runApp = document.querySelector(".appButton");
 
 runApp.addEventListener("click", () => {
     const entryText = phrase.value;
-    if (entryText.value.trim() !== ""){
+    if (entryText.value.trim() !== "") {
         let listItem = querySelector("ul");
         const array = cleanArray(entryText);
     }
@@ -799,11 +799,24 @@ runApp.addEventListener("click", () => {
 )
 
 
-function cleanArray(inputArray){
-    let noSpace = inputArray.replace(" ","");
-    let splitArray = noSpace.split("");
-    let noSpecial = splitArray.replace();
-    
+function justLetters(inputArray) {
+        const letterArray = inputArray
+        .join('')                                 // Unimos el array en un solo string
+        .normalize("NFD")                         // Separa letras de acentos
+        .replace(/[\u0300-\u036f]/g, '')          // Elimina los acentos
+        .replace(/[^a-zA-Z]/g, '')                // Elimina todo lo que no sea letra
+        .split('');                                 // Lo devolvemos como array de letras
+    return letterArray;
+}
+
+
+function justNumbers(inputArray) {
+    const numberArray = inputArray
+    .joint("")
+    .normalize("NFD")
+    .replace(/[^0-9]/g, '')
+    .split("")
+    return numberArray;
 }
 
 
@@ -812,7 +825,6 @@ function cleanArray(inputArray){
 
 
 
-    
 // Lineas para renderizar las tablas
 const tableToShow = document.querySelector("#chrono");
 tableToShow.innerHTML = stuTable[0].fourthStu;
