@@ -13,6 +13,14 @@ body {
     background-color: var(--main-background-color);
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--second-font-color);
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr;
