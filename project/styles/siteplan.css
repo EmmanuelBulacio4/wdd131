@@ -19,6 +19,11 @@ h3 {
     font-family: var(--main-font-family);
 }
 
+.subt{
+    text-decoration: underline;
+    font-family: var(--main-font-family);
+}
+
 header {
     display: flex;
     align-items: center;
