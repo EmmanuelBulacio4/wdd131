@@ -1,10 +1,7 @@
-// Espera a que todo el HTML se cargue antes de ejecutar el script.
-document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Lógica del Footer (se mantiene igual)
+document.addEventListener('DOMContentLoaded', () => {
     const today = new Date();
     const year = today.getFullYear();
-    // Nota: El elemento #currentyear y #lastModified deben existir en el HTML.
     const currentYearElement = document.querySelector("#currentyear");
     if (currentYearElement) {
         currentYearElement.textContent = year;
@@ -16,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lastModifiedElement.textContent = lastModification.toLocaleDateString("en-US");
     }
 
-    // 2. Lógica del Botón Hamburguesa (se mantiene igual)
     const burgerButton = document.querySelector('#hamburger');
     const navigation = document.querySelector('.lists');
 
@@ -28,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const phrase = document.getElementById("userInput");
-    const runApp = document.querySelector(".appButton"); // Seleccionar por CLASE es más específico que por "button"
+    const runApp = document.querySelector(".appButton");
 
     if (runApp && phrase) {
         runApp.addEventListener("click", (event) => {
@@ -42,10 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 listItem.innerHTML = "";
 
                 const lowerCaseLetters = Array.from(entryText.toLowerCase());
-                // Asegúrate de que la función justLettNum esté definida o incluida
                 const readyToRun = justLettNum(lowerCaseLetters);
 
-                const counts = {}; // acá guardamos los conteos
+                const counts = {};
 
                 for (const ch of readyToRun) {
                     counts[ch] = (counts[ch] || 0) + 1;
