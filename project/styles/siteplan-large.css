@@ -19,7 +19,12 @@
         padding: 1rem;
     }
 
-    .chrono {
+    #chrono {
+        grid-template-columns: 2/3;
+        background-color: var();
+    }
+
+    #portal {
         grid-template-columns: 2/3;
         background-color: var();
     }

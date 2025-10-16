@@ -79,11 +79,6 @@ a:hover{
     padding: 15px;
 }
 
-.chrono{
-    border: 1px solid grey;
-    padding-bottom: 1rem;
-}
-
 table{
     margin: 0 auto;
     border-collapse: collapse;
@@ -118,4 +113,9 @@ footer {
     font-family: var(--main-font-family);
     font-weight: bold;
     margin-top: 1rem;
+}
+
+.support{
+    color: var(--main-font-family);
+    text-decoration: underline;
 }
