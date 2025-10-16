@@ -437,12 +437,12 @@ const tableShown = document.getElementById("portal");
 //Default View
 tableShown.innerHTML = teacherTable[0].fourth;
 
-const election4 = document.querySelector(".room4")
+const election4 = document.querySelector(".fourth")
 election4.addEventListener("click", () => {
     tableShown.innerHTML = teacherTable[0].fourth;
 });
 
-const election5 = document.querySelector(".room5")
+const election5 = document.querySelector(".fifth")
 election5.addEventListener("click", () => {
     tableShown.innerHTML = teacherTable[1].fifth;
 });

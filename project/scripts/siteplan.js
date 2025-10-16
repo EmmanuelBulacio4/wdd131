@@ -193,7 +193,7 @@ const stuTable = [
         <table>
     <thead>
         <tr>
-            <th>Trimestre</th>
+            <th></th>
             <th>Lección</th>
             <th>Students' Book</th>
             <th>Activity Book</th>
@@ -366,20 +366,17 @@ const stuTable = [
             </table>`
     }];
 
-// Lineas para renderizar las tablas estudiantes
-const tableToShow = document.querySelector("#chrono");
+const tableShown = document.getElementById("chrono");
 
 //Default View
-tableToShow.innerHTML = stuTable[0].fourthStu;
+tableShown.innerHTML = stuTable[1].fifthStu;
 
-const elec4 = document.querySelector(".fourth")
-elec4.addEventListener("click", () => {
+const election4 = document.querySelector(".Fourth")
+election4.addEventListener("click", () => {
     tableShown.innerHTML = stuTable[0].fourthStu;
 });
 
-const elec5 = document.querySelector(".fifth")
-elec5.addEventListener("click", () => {
+const election5 = document.querySelector(".Fifth")
+election5.addEventListener("click", () => {
     tableShown.innerHTML = stuTable[1].fifthStu;
 });
-
-
