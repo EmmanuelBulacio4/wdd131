@@ -793,14 +793,20 @@ runApp.addEventListener("click", () => {
     const entryText = phrase.value;
     if (entryText.value.trim() !== "") {
         let listItem = querySelector("ul");
-        const readyToRun = justLettNum(entryText);
+        const chars = [
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+        ];
+        const lowerCaseLetters = entryText.map(elemento => elemento.toLowerCase());
+        const readyToRun = justLettNum(lowerCaseLetters);
     }
 }
 )
 
 
 function justLettNum(inputArray) {
-        const letterArray = inputArray
+    const letterArray = inputArray
         .join('')                                 // Unimos el array en un solo string
         .normalize("NFD")                         // Separa letras de acentos
         .replace(/[\u0300-\u036f]/g, '')          // Elimina los acentos
