@@ -24,9 +24,10 @@
         background-color: var();
     }
 
-    .lists lu{
-        display: block !important;
-    }
+    .lists ul, .lists h3 {
+    display: block;
+    color: var(--main-font-color);
+}
 
     .lists {
         display: block;
@@ -51,7 +52,7 @@
 
     li a {
         text-decoration: none;
-        color: var(--second-font-color);
+        color: var(--main-font-color);
     }
 
     li a:hover {
