@@ -35,8 +35,8 @@
         background-color: var(--second-background-color);
         border-radius: 10px;
         padding: 1rem;
-        align-items: center;
-        justify-items: center;
+        align-items: left;
+        justify-items: left;
         color: var(--second-font-color);
     }
 
