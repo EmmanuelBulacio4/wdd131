@@ -834,10 +834,6 @@ function justLettNum(inputArray) {
 }
 
 
-
-
-
-
 // Lineas para renderizar las tablas
 const tableToShow = document.querySelector("#chrono");
 tableToShow.innerHTML = stuTable[0].fourthStu;
