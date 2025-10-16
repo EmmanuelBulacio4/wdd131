@@ -793,32 +793,21 @@ runApp.addEventListener("click", () => {
     const entryText = phrase.value;
     if (entryText.value.trim() !== "") {
         let listItem = querySelector("ul");
-        const array = cleanArray(entryText);
+        const readyToRun = justLettNum(entryText);
     }
 }
 )
 
 
-function justLetters(inputArray) {
+function justLettNum(inputArray) {
         const letterArray = inputArray
         .join('')                                 // Unimos el array en un solo string
         .normalize("NFD")                         // Separa letras de acentos
         .replace(/[\u0300-\u036f]/g, '')          // Elimina los acentos
-        .replace(/[^a-zA-Z]/g, '')                // Elimina todo lo que no sea letra
+        .replace(/[^a-zA-Z0-9]/g, '')               // Elimina todo lo que no sea letra ni numeros
         .split('');                                 // Lo devolvemos como array de letras
     return letterArray;
 }
-
-
-function justNumbers(inputArray) {
-    const numberArray = inputArray
-    .joint("")
-    .normalize("NFD")
-    .replace(/[^0-9]/g, '')
-    .split("")
-    return numberArray;
-}
-
 
 
 
