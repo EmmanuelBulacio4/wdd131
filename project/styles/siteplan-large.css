@@ -20,13 +20,12 @@
     }
 
     #chrono {
-        grid-template-columns: 2/3;
-        background-color: var();
+        grid-column: 2/3;
+
     }
 
     #portal {
-        grid-template-columns: 2/3;
-        background-color: var();
+        grid-column: 2/3;
     }
 
     .lists ul, .lists h3 {
@@ -36,17 +35,12 @@
 
     .lists {
         display: block;
-        grid-template-columns: 1/2;
+        grid-column: 1/2;
         background-color: var(--second-background-color);
         border-radius: 10px;
         padding: 1rem;
-        align-items: left;
         justify-items: left;
         color: var(--second-font-color);
-    }
-
-    h3 {
-        text-decoration: underline;
     }
 
     .hero {
