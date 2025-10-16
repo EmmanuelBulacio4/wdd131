@@ -27,15 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Algoritmo BannerApp (La corrección principal está aquí)
-    // Usar la clase del botón para asegurar la selección correcta.
     const phrase = document.getElementById("userInput");
     const runApp = document.querySelector(".appButton"); // Seleccionar por CLASE es más específico que por "button"
 
-    // Verificamos que ambos elementos existan antes de agregar el event listener
     if (runApp && phrase) {
         runApp.addEventListener("click", (event) => {
-            // Prevenir el comportamiento por defecto (por si acaso es un submit)
             event.preventDefault();
 
             const entryText = phrase.value.trim();
@@ -55,8 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     counts[ch] = (counts[ch] || 0) + 1;
                 }
 
-                // Crear los <li> con los resultados y ordenar
-                // Convertir a array de [letra, conteo] y ordenar por letra
                 const sortedCounts = Object.entries(counts).sort(([a], [b]) => a.localeCompare(b));
 
                 for (const [ch, count] of sortedCounts) {
@@ -69,9 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-}); // Fin de DOMContentLoaded
+});
 
-// Esta función es un helper y puede estar fuera o dentro del DOMContentLoaded
 function justLettNum(inputArray) {
     const letterArray = inputArray
         .join('')
@@ -80,4 +73,10 @@ function justLettNum(inputArray) {
         .replace(/[^a-z0-9]/g, '')     // Elimina todo lo que no sea letra ni numeros (ya están en minúscula)
         .split('');
     return letterArray;
+}
+
+function totalLetters(number) {
+    const total = 0;
+    total =+ number;
+    return total;
 }
